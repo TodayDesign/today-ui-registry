@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import React, { type ReactNode } from "react";
 
 import { BrandHeader } from "@/components/brand-header";
@@ -9,20 +9,11 @@ import { cn } from "@/lib/utils";
 
 import "@/app/tokens.css";
 import "@/app/globals.css";
-
-const GeistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+import '@/app/fonts.css';
 
 const GeistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
-});
-
-const MontserratSerif = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-serif",
 });
 
 export default function ShellLayout({
@@ -34,9 +25,7 @@ export default function ShellLayout({
     <html
       lang="en"
       className={cn(
-        GeistSans.variable,
         GeistMono.variable,
-        MontserratSerif.variable,
         "bg-background text-foreground",
       )}
     >

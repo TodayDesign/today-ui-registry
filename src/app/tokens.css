@@ -1,46 +1,67 @@
 :root {
-  --background: oklch(0.97 0.01 80.72);
-  --foreground: oklch(0.3 0.04 30.2);
+  --color-\*: initial;
+	--color-black: hsl(0, 0%, 0%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-cream: hsl(40, 18%, 97%);
+	--color-orange: hsl(19, 100%, 60%);
+	--color-khaki: hsl(76, 70%, 38%);
+	--color-khaki-dark: hsl(76, 56%, 20%);
+	--color-blue: hsl(230, 100%, 66%);
+	--color-grey-light: hsl(300, 11%, 82%);
+	--color-grey: hsl(295, 12%, 65%);
+	--color-grey-dark: hsl(291, 7%, 39%);
+	--color-purple: hsl(257, 100%, 70%);
+	--color-cyan: hsl(171, 100%, 80%);
+	--color-pink: hsl(300, 100%, 87%);
+	--color-taupe: hsl(40, 71%, 84%);
+	--color-lime: hsl(70, 94%, 63%);
+	--color-mint: hsl(129, 100%, 84%);
+	--color-red: hsl(14, 100%, 36%);
+	--color-yellow: hsl(43, 90%, 62%);
+	--color-yellow-light: hsl(54, 89%, 78%);
 
-  --card: oklch(0.97 0.01 80.72);
-  --card-foreground: oklch(0.3 0.04 30.2);
+	--background: var(--color-white);
+  --foreground: var(--color-black);
 
-  --popover: oklch(0.97 0.01 80.72);
-  --popover-foreground: oklch(0.3 0.04 30.2);
+  --card: var(--color-white);
+  --card-foreground: var(--color-black);
 
-  --primary: oklch(0.52 0.13 144.17);
-  --primary-foreground: oklch(1.0 0 0);
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-black);
 
-  --secondary: oklch(0.96 0.02 147.64);
-  --secondary-foreground: oklch(0.43 0.12 144.31);
+  --primary: var(--color-black);
+  --primary-foreground: var(--color-white);
 
-  --muted: oklch(0.94 0.01 74.42);
-  --muted-foreground: oklch(0.45 0.05 39.21);
+  --secondary: var(--color-blue);
+  --secondary-foreground: var(--color-white);
 
-  --accent: oklch(0.9 0.05 146.04);
-  --accent-foreground: oklch(0.43 0.12 144.31);
+  --muted: var(--color-grey);
+  --muted-foreground: var(--color-grey-dark);
 
-  --destructive: oklch(0.54 0.19 26.72);
-  --destructive-foreground: oklch(1.0 0 0);
+  --accent: color-mix(in oklab, var(--color-blue) 10%, transparent);
+  --accent-foreground: var(--color-black);
 
-  --border: oklch(0.88 0.02 74.64);
-  --input: oklch(0.88 0.02 74.64);
-  --ring: oklch(0.52 0.13 144.17);
+  --destructive: var(--color-red);
+  --destructive-foreground: var(--color-white);
 
-  --chart-1: oklch(0.67 0.16 144.21);
-  --chart-2: oklch(0.58 0.14 144.18);
-  --chart-3: oklch(0.52 0.13 144.17);
-  --chart-4: oklch(0.43 0.12 144.31);
-  --chart-5: oklch(0.22 0.05 145.73);
+  --border: var(--color-grey-light);
+  --input: var(--color-grey-light);
+  --ring: var(--color-blue);
 
-  --sidebar: oklch(0.94 0.01 74.42);
-  --sidebar-foreground: oklch(0.3 0.04 30.2);
-  --sidebar-primary: oklch(0.52 0.13 144.17);
-  --sidebar-primary-foreground: oklch(1.0 0 0);
-  --sidebar-accent: oklch(0.9 0.05 146.04);
-  --sidebar-accent-foreground: oklch(0.43 0.12 144.31);
-  --sidebar-border: oklch(0.88 0.02 74.64);
-  --sidebar-ring: oklch(0.52 0.13 144.17);
+  --chart-1: var(--color-orange);
+  --chart-2: var(--color-cyan);
+  --chart-3: var(--color-blue);
+  --chart-4: var(--color-lime);
+  --chart-5: var(--color-khaki);
+
+  --sidebar: var(--color-white);
+  --sidebar-foreground: var(--color-black);
+  --sidebar-primary: var(--color-black);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: color-mix(in oklab, var(--color-blue) 10%, transparent);
+  --sidebar-accent-foreground: var(--color-black);
+  --sidebar-border: var(--color-grey);
+  --sidebar-ring: var(--color-blue);
 
   --radius: 0.5rem;
 
