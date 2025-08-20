@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 
 import "@/app/tokens.css";
 import "@/app/tailwind.css";
+import "@/app/fonts.css";
 
 const GeistMono = Geist_Mono({
   subsets: ["latin"],

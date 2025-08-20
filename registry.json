@@ -31,6 +31,11 @@
           "target": "app/tokens.css"
         },
         {
+          "path": "src/app/fonts.css",
+          "type": "registry:file",
+          "target": "app/fonts.css"
+        },
+        {
           "path": "src/v0/globals.css",
           "type": "registry:file",
           "target": "app/globals.css"

@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 import "@/app/tokens.css";
 import "@/app/globals.css";
+import "@/app/fonts.css";
 
 const GeistMono = Geist_Mono({
   subsets: ["latin"],
