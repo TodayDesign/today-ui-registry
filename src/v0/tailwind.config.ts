@@ -73,8 +73,8 @@ const config: Config = {
         "2xl": "var(--shadow-2xl)",
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Marr"],
-        sans: ["var(--font-sans)", "GT America"],
+        serif: ["GT America", "sans-serif"],
+        sans: ["Marr", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       keyframes: {
