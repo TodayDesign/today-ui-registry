@@ -127,6 +127,13 @@
       "title": "Chatbot",
       "description": "A chatbot application with your brand themed components",
       "registryDependencies": [
+        "https://today-ui-registry.vercel.app/r/conversation.json",
+        "https://today-ui-registry.vercel.app/r/message.json",
+        "https://today-ui-registry.vercel.app/r/prompt-input.json",
+        "https://today-ui-registry.vercel.app/r/response.json",
+        "https://today-ui-registry.vercel.app/r/sources.json",
+        "https://today-ui-registry.vercel.app/r/reasoning.json",
+        "https://today-ui-registry.vercel.app/r/loader.json",
         "https://today-ui-registry.vercel.app/r/theme.json"
       ],
       "files": [
@@ -139,6 +146,11 @@
           "path": "src/app/demo/[name]/blocks/chatbot-page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
+        },
+        {
+          "path": "src/app/api/chat/route.ts",
+          "type": "registry:file",
+          "target": "app/api/chat/route.ts"
         }
       ]
     },
