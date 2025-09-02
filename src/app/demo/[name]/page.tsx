@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 
 import { demos } from "@/app/demo/[name]/index";
 
-import { Renderer } from "@/app/demo/[name]/renderer";
+// import { Renderer } from "@/app/demo/[name]/renderer";
 import { getRegistryItem } from "@/lib/registry";
 
 export async function generateStaticParams() {
@@ -31,7 +31,7 @@ export default async function DemoPage({
       {components &&
         Object.entries(components).map(([key, node]) => (
           <div className="relative w-full" key={key}>
-            <Renderer>{node}</Renderer>
+            {node}
           </div>
         ))}
     </div>

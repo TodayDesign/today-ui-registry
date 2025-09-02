@@ -122,6 +122,27 @@
       ]
     },
     {
+      "name": "chatbot",
+      "type": "registry:block",
+      "title": "Chatbot",
+      "description": "A chatbot application with your brand themed components",
+      "registryDependencies": [
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/chatbot-page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        }
+      ]
+    },
+    {
       "name": "store",
       "type": "registry:block",
       "title": "Store",
@@ -777,6 +798,339 @@
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "An interactive component which can be expanded/collapsed.",
+      "registryDependencies": [
+        "collapsible",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "A carousel with motion and swipe built using Embla.",
+      "registryDependencies": [
+        "carousel",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "For sighted users to preview content available behind a link.",
+      "registryDependencies": [
+        "hover-card",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Augments native scroll functionality for custom, cross-platform styling.",
+      "registryDependencies": [
+        "scroll-area",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "actions",
+      "type": "registry:component",
+      "title": "Actions",
+      "description": "Action buttons with tooltip support for AI interfaces.",
+      "registryDependencies": [
+        "button",
+        "tooltip",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/actions.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "branch",
+      "type": "registry:component",
+      "title": "Branch",
+      "description": "Branch navigation for multiple conversation paths.",
+      "registryDependencies": [
+        "button",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/branch.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:component",
+      "title": "Code Block",
+      "description": "Syntax highlighted code block with copy functionality.",
+      "registryDependencies": [
+        "button",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/code-block.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "conversation",
+      "type": "registry:component",
+      "title": "Conversation",
+      "description": "Chat conversation container with auto-scroll functionality.",
+      "registryDependencies": [
+        "button",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/conversation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "image",
+      "type": "registry:component",
+      "title": "Image",
+      "description": "AI generated image display component.",
+      "registryDependencies": [
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/image.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "inline-citation",
+      "type": "registry:component",
+      "title": "Inline Citation",
+      "description": "Inline citations with source preview in hover cards.",
+      "registryDependencies": [
+        "badge",
+        "carousel",
+        "hover-card",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/inline-citation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "loader",
+      "type": "registry:component",
+      "title": "Loader",
+      "description": "Animated loading spinner for AI operations.",
+      "registryDependencies": [
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/loader.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:component",
+      "title": "Message",
+      "description": "Chat message components with avatar support.",
+      "registryDependencies": [
+        "avatar",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/message.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "prompt-input",
+      "type": "registry:component",
+      "title": "Prompt Input",
+      "description": "AI prompt input with toolbar and model selection.",
+      "registryDependencies": [
+        "button",
+        "select",
+        "textarea",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/prompt-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "reasoning",
+      "type": "registry:component",
+      "title": "Reasoning",
+      "description": "Collapsible reasoning display with streaming support.",
+      "registryDependencies": [
+        "collapsible",
+        "https://today-ui-registry.vercel.app/r/response.json",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/reasoning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "response",
+      "type": "registry:component",
+      "title": "Response",
+      "description": "Streamable markdown response component.",
+      "registryDependencies": [
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/response.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sources",
+      "type": "registry:component",
+      "title": "Sources",
+      "description": "Collapsible sources list for AI responses.",
+      "registryDependencies": [
+        "collapsible",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/sources.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "suggestion",
+      "type": "registry:component",
+      "title": "Suggestion",
+      "description": "Scrollable suggestion chips for AI prompts.",
+      "registryDependencies": [
+        "button",
+        "scroll-area",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/suggestion.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "task",
+      "type": "registry:component",
+      "title": "Task",
+      "description": "Collapsible task display with file references.",
+      "registryDependencies": [
+        "collapsible",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/task.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tool",
+      "type": "registry:component",
+      "title": "Tool",
+      "description": "Collapsible tool call display with input/output.",
+      "registryDependencies": [
+        "badge",
+        "collapsible",
+        "https://today-ui-registry.vercel.app/r/code-block.json",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/tool.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "web-preview",
+      "type": "registry:component",
+      "title": "Web Preview",
+      "description": "Web preview iframe with console and navigation.",
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "input",
+        "tooltip",
+        "https://today-ui-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ai-elements/web-preview.tsx",
+          "type": "registry:component"
         }
       ]
     }
