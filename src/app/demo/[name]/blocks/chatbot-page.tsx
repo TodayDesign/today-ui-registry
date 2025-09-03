@@ -93,7 +93,7 @@ export default function ChatbotPage() {
                           <Source
                             key={`${message.id}-${i}`}
                             href={(part as SourceUrlUIPart).url}
-                            title={(part as SourceUrlUIPart).title}
+                            title={(part as SourceUrlUIPart).url}
                           />
                         </SourcesContent>
                       ))}
